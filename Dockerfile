@@ -11,7 +11,7 @@ RUN go get \
     && go get golang.org/x/tools/cmd/cover \
     && go get github.com/mattn/goveralls
 
-RUN go build -o example cmd/example/main.go
+RUN go build -o example main.go
 
 FROM alpine:latest
 RUN apk --no-cache add ca-certificates
